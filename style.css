@@ -1,0 +1,137 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ff00ff;
+}
+
+.container {
+	width: 60%;
+	padding: 20px;
+}
+
+.logo {
+	text-align: center;
+	margin-bottom: 20px;
+	width: 10%;
+	border: 3px dashed #ff00ff;
+}
+
+.logo h2 {
+	font-weight: bold;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+	align-items: flex-start;
+	margin-bottom: 20px;
+}
+
+/* 70% width for the first table, 30% width for the second */
+.info-table-large {
+	width: 70%;
+}
+.info-table-large td:first-child {
+	background-color: #f1bbf1;
+}
+
+.info-table-small {
+	width: 30%;
+}
+
+.info-table {
+	border: 1px solid #ff00ff;
+	border-collapse: separate;
+	border-left: 0;
+	border-radius: 10px;
+	border-spacing: 0px;
+}
+tr {
+	display: table-row;
+	vertical-align: inherit;
+	border-color: inherit;
+}
+th,
+td {
+	padding: 5px 4px 6px 4px;
+	text-align: left;
+	vertical-align: top;
+	border-left: 1px solid #ff00ff;
+}
+
+.info-table td {
+	width: 50%;
+	border-top: 1px solid #ff00ff;
+}
+thead:first-child tr:first-child th:first-child,
+tbody:first-child tr:first-child td:first-child {
+	border-radius: 10px 0 0 0;
+}
+thead:last-child tr:last-child th:first-child,
+tbody:last-child tr:last-child td:first-child {
+	border-radius: 0 0 0 10px;
+}
+
+.info-table-full {
+	width: 100%;
+}
+.info-table-full th:nth-child(1),
+.info-table-full td:nth-child(1) {
+	width: 15%;
+}
+
+.info-table-full th:nth-child(2),
+.info-table-full td:nth-child(2) {
+	width: 50%;
+}
+
+.info-table-full th:nth-child(3),
+.info-table-full td:nth-child(3) {
+	width: 5%;
+}
+
+.info-table-full th:nth-child(4),
+.info-table-full td:nth-child(4) {
+	width: 15%;
+}
+
+.info-table-full th:nth-child(5),
+.info-table-full td:nth-child(5) {
+	width: 15%;
+}
+
+.info-table-full th {
+	text-align: center;
+	background-color: #f1bbf1;
+}
+.info-table-full tfoot td {
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+}
+
+.comment-box {
+	border: 2px solid #ff00ff;
+	border-radius: 10px;
+	padding: 20px;
+	text-align: center;
+}
+
+.comment-title {
+	font-weight: bold;
+	background-color: #ff00ff;
+	padding: 10px;
+	color: white;
+	border-radius: 10px 10px 0 0;
+	font-size: 18px;
+}
+
+.comment-content {
+	padding: 20px;
+	font-size: 16px;
+}
